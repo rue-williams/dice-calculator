@@ -1,0 +1,73 @@
+$blue: #a3d5d3;
+$gray: #a29d94;
+$orange: #fca611;
+$lgray: #c5c5c5;
+$bgblue: #2196f3;
+$white: #ffffff;
+$black: #000000;
+
+button {
+  border: 0;
+  outline: none;
+}
+
+body {
+  background-color: $blue;
+}
+
+.grid-container {
+  border-radius: 15px;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.25);
+  margin: auto;
+  margin-top:2em;
+  max-width: 20em;
+  overflow: hidden;
+}
+
+.readout {
+  background-color: $black;
+  color: $white;
+  text-align: right;
+  font-size: 1.5em;
+  padding: 5px 15px;
+}
+
+.equation {
+  background-color: #333;
+  color: $gray;
+  text-align: right;
+  font-size: 1em;
+  padding: 5px;
+  padding-right: 15px
+}
+
+.numpad {
+  background-color: $black;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.numpad > * {
+  padding: 0.5em 1.25em;
+  background-color: $lgray;
+  font-size: 1.15em;
+}
+
+.dice {
+  background-color: $gray;
+}
+
+.clear {
+  grid-column: 3 / span 2;
+}
+
+.operator {
+  background-color: $orange;
+}
+
+.roll {
+  background-color: $orange;
+  grid-column:4;
+  grid-row: 6 / span 2;
+}
